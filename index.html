@@ -520,73 +520,62 @@
 <section>
     <h2>Evaluation Results</h2>
     <p>
-        Table 1 reports the main comparison between SafeEar and our method, while Tables 2-4 present ablation studies on feature combinations, obfuscation targets, and obfuscation strategies.
+        Table 1 presents evaluation results and samples for SafeEar, while Tables 2-4 present ablation studies on feature combinations, obfuscation targets, and obfuscation strategies.
     </p>
 
-    <h3>Table 1. Main Comparison (SafeEar vs. Ours)</h3>
+    <h3>Table 1. Evaluation Results and Samples</h3>
+    <div class="scene-section"><span>SafeEar Sample</span></div>
     <div class="results-table-wrapper">
         <table class="results">
             <thead>
                 <tr>
-                    <th>Method</th>
-                    <th>Codec</th>
-                    <th>Obf.</th>
-                    <th>EER <span class="metric-arrow">↓</span></th>
-                    <th>WER <span class="metric-arrow">↑</span></th>
-                    <th>CER <span class="metric-arrow">↑</span></th>
-                    <th>STOI <span class="metric-arrow">↓</span></th>
+                    <th>Speaker</th>
+                    <th>SpeechTokenizer/Original</th>
+                    <th>v1-v8_reconstruction.wav</th>
+                    <th>v2-v8_reconstruction.wav</th>
+                    <th>v2-v8 shuffled_reconstruction.wav</th>
+                </tr>
+                <tr>
+                    <th>-</th>
+                    <th>Original</th>
+                    <th>full-feature</th>
+                    <th>non-Content</th>
+                    <th>non-Content (Global Shuffle)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>SafeEar</td>
-                    <td>ST</td>
-                    <td>-</td>
-                    <td>3.68%</td>
-                    <td>99.97%</td>
-                    <td>81.74%</td>
-                    <td>0.6443</td>
+                    <td>male-clean</td>
+                    <td><audio controls preload="none"><source src="audio/English-male/SpeechTokenizer/1_original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
                 </tr>
                 <tr>
-                    <td>SafeEar</td>
-                    <td>ST</td>
-                    <td>GS</td>
-                    <td>5.19%</td>
-                    <td>99.98%</td>
-                    <td>82.06%</td>
-                    <td>0.1508</td>
+                    <td>male-noisy</td>
+                    <td><audio controls preload="none"><source src="audio/English-male-noisy/SpeechTokenizer/1_original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male-noisy/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male-noisy/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male-noisy/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
                 </tr>
                 <tr>
-                    <td>Ours</td>
-                    <td>FA</td>
-                    <td>-</td>
-                    <td>2.33%</td>
-                    <td>95.56%</td>
-                    <td>65.79%</td>
-                    <td>0.7250</td>
+                    <td>female-clean</td>
+                    <td><audio controls preload="none"><source src="audio/English-female/SpeechTokenizer/1_original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
                 </tr>
                 <tr>
-                    <td>Ours</td>
-                    <td>FA</td>
-                    <td>GS</td>
-                    <td>2.66%</td>
-                    <td>99.74%</td>
-                    <td>76.96%</td>
-                    <td>0.2152</td>
-                </tr>
-                <tr class="ours">
-                    <td>Ours</td>
-                    <td>FA</td>
-                    <td>MG</td>
-                    <td><strong>-%</strong></td>
-                    <td><strong>98.83%</strong></td>
-                    <td><strong>89.60%</strong></td>
-                    <td><strong>0.3410</strong></td>
+                    <td>female-noisy</td>
+                    <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/1_original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <p>ST: SpeechTokenizer, FA: FAcodec, GS: Global Shuffle, MG: Multi-granularity.</p>
+    <p>Rows map to source sets: English-male, English-male-noisy, English-female, and English-female-noisy.</p>
 
     <h3>Table 2. Ablation I: Disentangled Feature Combinations</h3>
     <div class="results-table-wrapper">
