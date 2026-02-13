@@ -601,25 +601,25 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Fpro + Fcon + Faco + Ftim</td>
+                    <td><i>F</i><sub>pro</sub> + <i>F</i><sub>con</sub> + <i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
                     <td>2.30%</td>
                     <td>4.43%</td>
                     <td>1.36%</td>
                 </tr>
                 <tr class="ours">
-                    <td>Fpro + Faco + Ftim</td>
+                    <td><i>F</i><sub>pro</sub> + <i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
                     <td>2.33%</td>
                     <td>95.66%</td>
                     <td>65.79%</td>
                 </tr>
                 <tr>
-                    <td>Fpro + Ftim</td>
+                    <td><i>F</i><sub>pro</sub> + <i>F</i><sub>tim</sub></td>
                     <td>2.44%</td>
                     <td>98.09%</td>
                     <td>77.72%</td>
                 </tr>
                 <tr>
-                    <td>Faco + Ftim</td>
+                    <td><i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
                     <td>3.36%</td>
                     <td>99.92%</td>
                     <td>99.22%</td>
@@ -641,19 +641,19 @@
             </thead>
             <tbody>
                 <tr class="ours">
-                    <td>Fpro(obf) + Faco + Ftim</td>
+                    <td><i>F</i><sub>pro</sub><sup>obf</sup> + <i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
                     <td>2.40%</td>
                     <td>98.89%</td>
                     <td>80.40%</td>
                 </tr>
                 <tr>
-                    <td>Fpro + Faco(obf) + Ftim</td>
+                    <td><i>F</i><sub>pro</sub> + <i>F</i><sub>aco</sub><sup>obf</sup> + <i>F</i><sub>tim</sub></td>
                     <td>2.59%</td>
                     <td>98.90%</td>
                     <td>81.57%</td>
                 </tr>
                 <tr>
-                    <td>Fpro(obf) + Faco(obf) + Ftim</td>
+                    <td><i>F</i><sub>pro</sub><sup>obf</sup> + <i>F</i><sub>aco</sub><sup>obf</sup> + <i>F</i><sub>tim</sub></td>
                     <td>2.69%</td>
                     <td>98.87%</td>
                     <td>83.05%</td>
@@ -661,9 +661,9 @@
             </tbody>
         </table>
     </div>
-    <p>Fpro(obf), Faco(obf): features transformed via LTP.</p>
+    <p><i>F</i><sub>pro</sub><sup>obf</sup>, <i>F</i><sub>aco</sub><sup>obf</sup>: features transformed via LTP.</p>
 
-    <h3>Table 4. Ablation III: Obfuscation Strategy on Fpro</h3>
+    <h3>Table 4. Ablation III: Obfuscation Strategy on <i>F</i><sub>pro</sub></h3>
     <div class="results-table-wrapper">
         <table class="results">
             <thead>
@@ -676,43 +676,43 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Fpro(GTA) + Fbase</td>
+                    <td><i>F</i><sub>pro</sub><sup>GTA</sup> + <i>F</i><sub>base</sub></td>
                     <td>2.98%</td>
                     <td>99.98%</td>
                     <td>99.46%</td>
                 </tr>
                 <tr>
-                    <td>Fpro(LTA) + Fbase</td>
+                    <td><i>F</i><sub>pro</sub><sup>LTA</sup> + <i>F</i><sub>base</sub></td>
                     <td>2.67%</td>
                     <td>99.00%</td>
                     <td>88.52%</td>
                 </tr>
                 <tr>
-                    <td>Fpro(LTP) + Fbase</td>
+                    <td><i>F</i><sub>pro</sub><sup>LTP</sup> + <i>F</i><sub>base</sub></td>
                     <td>2.40%</td>
                     <td>98.89%</td>
                     <td>80.40%</td>
                 </tr>
                 <tr>
-                    <td>Fpro(GTA+LTA) + Fbase</td>
+                    <td><i>F</i><sub>pro</sub><sup>GTA+LTA</sup> + <i>F</i><sub>base</sub></td>
                     <td>-%</td>
                     <td>99.03%</td>
                     <td>90.51%</td>
                 </tr>
                 <tr>
-                    <td>Fpro(GTA+LTP) + Fbase</td>
+                    <td><i>F</i><sub>pro</sub><sup>GTA+LTP</sup> + <i>F</i><sub>base</sub></td>
                     <td>-%</td>
                     <td>98.83%</td>
                     <td>85.37%</td>
                 </tr>
                 <tr>
-                    <td>Fpro(LTA+LTP) + Fbase</td>
+                    <td><i>F</i><sub>pro</sub><sup>LTA+LTP</sup> + <i>F</i><sub>base</sub></td>
                     <td>-%</td>
                     <td>98.59%</td>
                     <td>85.88%</td>
                 </tr>
                 <tr class="ours">
-                    <td>Fpro(GTA+LTA+LTP) + Fbase</td>
+                    <td><i>F</i><sub>pro</sub><sup>GTA+LTA+LTP</sup> + <i>F</i><sub>base</sub></td>
                     <td>-%</td>
                     <td>98.83%</td>
                     <td>89.60%</td>
@@ -720,7 +720,7 @@
             </tbody>
         </table>
     </div>
-    <p>Fbase = {Faco, Ftim}.</p>
+    <p><i>F</i><sub>base</sub> = {<i>F</i><sub>aco</sub>, <i>F</i><sub>tim</sub>}.</p>
 </section>
 
 <!-- ════════════ Audio Samples ════════════ -->
